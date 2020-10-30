@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Rotator_Soldier : MonoBehaviour
 {
+    [Tooltip("Movment speed in meters per sec")]
+    [SerializeField]
     float speed = -1f;
     // Start is called before the first frame update
     void Start()
