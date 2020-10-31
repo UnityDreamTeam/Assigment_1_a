@@ -8,6 +8,7 @@ public class Oscillator : MonoBehaviour
     [Tooltip("Movment speed in meters per sec")]
     [SerializeField]
     float speed = 5f;
+    [Tooltip("Velocity change rate")]
     [SerializeField]
     float acceleration = -1f;
     float mid;
@@ -16,7 +17,6 @@ public class Oscillator : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Start");
         mid = transform.position.x;
 
     }
