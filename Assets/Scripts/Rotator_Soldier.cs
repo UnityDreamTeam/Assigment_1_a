@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Threading;
 using UnityEngine;
+/**
+ *  class that rotate goku
+ */
 
 public class Rotator_Soldier : MonoBehaviour
 {
-    [Tooltip("Movment speed in meters per sec")]
+    [Tooltip("rotation speed")]
     [SerializeField]
-    float speed = -1f;
+    float RotateSpeed = 1.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +21,7 @@ public class Rotator_Soldier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
-        speed -= 0.1f;
+        transform.eulerAngles += new Vector3(0, RotateSpeed, 0);
+       
     }
 }
