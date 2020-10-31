@@ -7,7 +7,7 @@ using UnityEngine;
  *  class that rotate goku
  */
 
-public class Rotator_Soldier : MonoBehaviour
+public class Rotator : MonoBehaviour
 {
     [Tooltip("rotation speed")]
     [SerializeField]
