@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /*
  * class that control the treasure display on spacebar key push
  */
 
 public class HideAndShow : MonoBehaviour
-{   SpriteRenderer display;
+{   
+    SpriteRenderer display;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +19,7 @@ public class HideAndShow : MonoBehaviour
         if(Input.GetKeyDown("space")) {
             if (this.display.enabled)
             {
-            this.display.enabled = false;
+                this.display.enabled = false;
             }
             else
             {

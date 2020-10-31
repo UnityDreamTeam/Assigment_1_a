@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 /**
  * This script expands and shrinks object size in a heartbeat motion.
  * */
