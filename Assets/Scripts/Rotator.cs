@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 /**
  *  class that rotate goku
@@ -8,7 +9,8 @@ public class Rotator : MonoBehaviour
 {
     [Tooltip("rotation speed")]
     [SerializeField]
-    float RotateSpeed = 1.5f;
+    float RotateSpeed;
+    float RotateZ;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,9 @@ public class Rotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.eulerAngles += new Vector3(0, RotateSpeed, 0);
-       
+        RotateZ += Time.deltaTime * RotateSpeed;
+        transform.rotation = quaternion.Euler(0,0,RotateZ);
+        
+
     }
 }
